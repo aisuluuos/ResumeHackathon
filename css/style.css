@@ -1,0 +1,456 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*SIDEBAR START*/
+#sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px; /* начальное положение сайдбара за пределами экрана */
+  width: 250px;
+  height: 100%;
+  background-color: rgb(255, 204, 211);
+  transition: right 0.3s ease; /* анимация при открытии/закрытии */
+  z-index: 9999; /* чтобы сайдбар был поверх остального содержимого */
+}
+#sidebar h2 {
+  font-family: Dm Serif Display;
+  font-size: 35px;
+  text-align: center;
+  color: gray;
+}
+#sidebar ul li a {
+  /* Стили для ссылок в навигации */
+  color: gray; /* Цвет ссылок */
+  display: block; /* Располагать ссылки на отдельных строках */
+  padding: 10px 15px; /* Отступы вокруг текста ссылок */
+  font-family: Sedan;
+  font-size: 20px;
+  font-weight: 500;
+}
+#sidebar:hover {
+  color: chartreuse;
+  right: 0; /* открытие сайдбара при наведении */
+}
+/*SIDEBAR FINISH*/
+/*HEADER START*/
+#header_bg_color {
+  width: 100%;
+  background-color: beige;
+}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav_inner_list {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: Sedan;
+  color: rgb(66, 66, 66);
+  font-size: 20px;
+  font-weight: 300;
+}
+a {
+  text-decoration: none;
+  color: darkgray;
+}
+a:hover {
+  color: chartreuse;
+  text-decoration: underline;
+}
+#nav_inner img {
+  width: 50px;
+  height: 50px;
+}
+/*HEADER FINISH*/
+/*SECTION-1 START*/
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#section-1_left {
+  width: 50%;
+}
+.section-1_right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-1_right h1 {
+  font-family: Dm Serif Display;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: darkslategrey;
+}
+/*SECTION-1 FINISH*/
+/*SECTION-2 START*/
+.container_about {
+  width: 100%;
+  height: 40%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#section-2_about_info {
+  margin-top: 120px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+#section-2_about_info h2 {
+  font-family: Dm Serif Display;
+  font-size: 50px;
+  font-weight: 600;
+  color: rgb(78, 77, 77);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+#section-2_about_info p {
+  padding-top: 15px;
+  font-family: Sedan;
+  font-size: 25px;
+  font-weight: 500;
+  color: darkgray;
+  line-height: 35px;
+}
+.section-2_about_img {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.section-2_about_img img {
+  width: 300px;
+  height: 300px;
+}
+/*SECTION-2 FINISH*/
+/*SECTION-3 START*/
+.container_about_2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 100px;
+  align-items: start;
+}
+.section-3_info_left h5 {
+  font-family: Dm Serif Display;
+  font-size: 35px;
+  font-weight: 600;
+  color: rgb(114, 113, 113);
+}
+.section-3_info_left ul {
+  font-family: Sedan;
+  font-size: 20px;
+  font-weight: 300;
+  color: gray;
+  padding-top: 10px;
+  line-height: 25px;
+}
+.section-3_info_right h5 {
+  font-family: Dm Serif Display;
+  font-size: 35px;
+  font-weight: 600;
+  color: rgb(114, 113, 113);
+}
+.section-3_info_right p {
+  font-family: Sedan;
+  font-size: 20px;
+  font-weight: 300;
+  color: gray;
+  padding-top: 10px;
+  line-height: 30px;
+  margin-bottom: 90px;
+}
+
+/*SECTION-3 FINISH*/
+/*SECTION-4 START*/
+.container_hobbies {
+  width: 100%;
+  height: 40%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#section-4_info {
+  margin-top: 120px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+#section-4_info h3 {
+  font-family: Dm Serif Display;
+  font-size: 50px;
+  font-weight: 600;
+  color: rgb(78, 77, 77);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+#section-4_info p {
+  padding-top: 15px;
+  font-family: Sedan;
+  font-size: 25px;
+  font-weight: 500;
+  color: darkgray;
+  line-height: 35px;
+}
+.section-4_hobbies_img {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.section-4_hobbies_img img {
+  width: 300px;
+  height: 400px;
+  margin-bottom: 90px;
+}
+/*SECTION-4 FINISH*/
+/*SECTION-5 START*/
+.container_projects {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#section-5_projects_info {
+  margin-top: 150px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+#section-5_projects_info h3 {
+  font-family: Dm Serif Display;
+  font-size: 50px;
+  font-weight: 600;
+  color: rgb(78, 77, 77);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding-bottom: 50px;
+}
+#section-5_projects_info ul {
+  padding-top: 15px;
+  padding-left: 50px;
+  font-family: Sedan;
+  font-size: 25px;
+  font-weight: 500;
+  color: darkgray;
+  line-height: 35px;
+  text-align: start;
+}
+.section-5_projects_cert {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.section-5_projects_cert img {
+  width: 250px;
+  height: 150px;
+  margin-bottom: 90px;
+}
+/*SECTION-5 FINISH*/
+/*SECTION-6 START*/
+.container_skills {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#skills {
+  width: 100%;
+  width: 700px;
+  margin-top: 150px;
+  padding: 0 20px;
+  margin-bottom: 90px;
+}
+#skills h3 {
+  font-family: Dm Serif Display;
+  font-size: 50px;
+  font-weight: 600;
+  color: rgb(78, 77, 77);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding-bottom: 50px;
+}
+#skills p {
+  line-height: 35px;
+  padding-top: 15px;
+  color: darkslategrey;
+  font-family: Sedan;
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 15px 0;
+}
+.skill-bar {
+  height: 12px;
+  background: chartreuse;
+  border-radius: 5px;
+}
+.skill-percentage {
+  height: 12px;
+  background: pink;
+  border-radius: 5px;
+  position: relative;
+}
+.skill-percentage::before {
+  content: attr(a);
+  position: absolute;
+  background: chartreuse;
+  padding: 4px 6px;
+  font-size: 12px;
+  font-family: Sedan;
+  font-weight: 500;
+  border-radius: 5px;
+  top: -30px;
+  right: 0;
+  transform: translateX(50%);
+}
+.skill-percentage::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: chartreuse;
+  top: -13px;
+  right: 0;
+  transform: translateX(50%) rotate(45deg);
+}
+/*SECTION-6 FINISH*/
+/*SECTION-7 START*/
+/* Style inputs */
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid pink;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: gray;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: pink;
+}
+.container_contact {
+  background-color: rgb(253, 252, 170);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#contact {
+  margin-top: 120px;
+  margin-bottom: 100px;
+  text-align: start;
+}
+#contact h2 {
+  font-family: Dm Serif Display;
+  font-size: 50px;
+  font-weight: 600;
+  color: rgb(78, 77, 77);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.section-7_contact_info {
+  padding-top: 15px;
+  font-family: Sedan;
+  font-size: 25px;
+  font-weight: 500;
+  color: pink;
+  line-height: 35px;
+}
+/*SECTION-7 FINISH*/
+/*FOOTER START*/
+.footer_inner img {
+  width: 50px;
+  height: 50px;
+}
+.container_footer {
+  background-color: rgb(253, 252, 170);
+  padding-top: 70px;
+  padding-left: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 100px;
+}
+.footer_inner_info {
+  font-family: Sedan;
+  color: rgb(66, 66, 66);
+  font-size: 20px;
+  font-weight: 300;
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+}
+.footer_end {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: Sedan;
+  color: rgb(66, 66, 66);
+  font-size: 20px;
+  font-weight: 300;
+}
+/*FOOTER FINISH*/
+
+@media all and (max-width: 1024px) {
+  .container {
+    width: 1024px;
+  }
+  .section-1_right h1 {
+    font-size: 40px;
+  }
+  #section-1_left img {
+    width: 50%;
+  }
+  nav {
+    width: 1024px;
+  }
+  .section-5_projects_cert img {
+    width: 200px;
+    height: 100px;
+    margin-bottom: 90px;
+  }
+  .footer_end {
+    font-size: 15px;
+  }
+  .footer_inner_info {
+    font-size: 15px;
+  }
+}
+@media all and (max-width: 768px) {
+  content.container {
+    width: 100%;
+  }
+  #section-1_left {
+    width: 380px;
+  }
+  #section-1_right {
+    width: 380px;
+    font-size: 50px;
+  }
+  nav {
+    width: 768px;
+  }
+  .section-2_about_img img {
+    width: 200px;
+    height: 200px;
+  }
+}
